@@ -45,11 +45,11 @@ const Home = () => {
                   <td>
                     <button
                       className={
-                        item?.status != "closed" ? "green-btn" : "blue-btn"
+                        item?.status !== "closed" ? "green-btn" : "blue-btn"
                       }
                       onClick={() => handleConnect(item, index)}
                     >
-                      {item?.status == "closed" ? "Re-Open" : "Connect"}
+                      {item?.status === "closed" ? "Re-Open" : "Connect"}
                     </button>
                   </td>
                 </tr>
