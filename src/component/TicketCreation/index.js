@@ -1,15 +1,13 @@
 import React from "react";
 import "./ticket.css";
-import { useDispatch, useSelector } from "react-redux";
-import { selectTicket, submitIssue } from "./ticketSlice";
+import { useDispatch } from "react-redux";
+import { submitIssue } from "./ticketSlice";
 import { useNavigate } from "react-router-dom";
 import Header from "../common/Header";
 
 const TicketCreation = () => {
   const dispatch = useDispatch();
-  const state = useSelector(selectTicket);
   const navigate = useNavigate();
-  console.log(state);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -17,7 +15,6 @@ const TicketCreation = () => {
     const resultObj = Object.fromEntries(formData.entries());
     resultObj.id = getRandomInt(100000, 200000);
     resultObj.status = "In-Progress";
-    console.log(resultObj);
     dispatch(submitIssue(resultObj));
     navigate("/");
   };

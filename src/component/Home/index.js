@@ -11,9 +11,9 @@ const Home = () => {
   const dispatch = useDispatch();
 
   const handleConnect = (ticket, id) => {
-    if (ticket?.status != "closed") {
+    if (ticket?.status !== "closed") {
       setModal(true);
-    } else if (ticket?.status == "closed") {
+    } else if (ticket?.status === "closed") {
       dispatch(updateIssue(id));
     }
   };

@@ -11,6 +11,7 @@ const Header = () => {
         src="https://www.bartecautoid.com/images/service-centre-logo.png"
         width={200}
         height={50}
+        alt="service-img"
       />
       <div className="titleComp">
         <div className="headerLink" onClick={() => navigate("/")}>
