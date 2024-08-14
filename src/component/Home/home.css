@@ -1,0 +1,24 @@
+.homeComp {
+    /* display: flex;
+    justify-content: center;
+    height: calc(100vh - 110px);
+    align-items: center; */
+    table td, table th{
+        text-align: center;
+        padding: 5px;
+    }
+    table {
+        margin: 20px auto;
+    }
+    h3 {
+        text-align: center;
+    }
+}
+
+.green-btn{
+    background-color: rgb(82, 228, 82);
+}
+.blue-btn {
+    background-color: rgb(129, 129, 245);
+    /* border: none; */
+}

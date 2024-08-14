@@ -1,0 +1,39 @@
+.homeContainer {
+    display: flex;
+    height: calc(100vh - 110px);
+    justify-content: center;
+    align-items: center;
+}
+
+.homeContainer .form {
+    width: 300px;
+    padding: 20px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    input {
+        width: 100%;
+        line-height: 20px;
+        margin-top: 5px;
+    }
+    textarea {
+        width: 100%;
+        margin-top: 5px;
+        max-width: 300px;
+        max-height: 100px;
+    }
+    label {
+        margin-bottom: 5px;
+    }
+    input[type='submit'] {
+        width: calc(100% + 8px);
+        margin-top: 10px;
+        background-color: lightgreen
+    }
+    h3 {
+        text-align: center;
+    }
+}
+
+.inputComp {
+    margin-bottom: 10px;
+}
